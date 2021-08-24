@@ -1,0 +1,14 @@
+body{
+    text-align: center;
+    background-color: rgb(8, 8, 112);
+}
+p{
+    font-size: 2em;
+    color:#fff;
+}
+strong{
+    color: yellow;
+    font-size: 2.5rem;
+    /* em 부모 크기에 대한 상대크기 */
+    /* rem - 기본크기 16px의 상대크기 */
+}
