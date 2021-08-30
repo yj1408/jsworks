@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>생성자 함수형 객체 만들기</title>
+</head>
+<body>
+    <script>
+        function Person(name, age, isMerried){
+            this.name = name;
+            this.age = age;
+            this.isMerried = isMerried;
+
+            this.info = function(){
+                if(this.isMerried == true)
+                    document.write(this.name + "기혼입니다.<br>");
+                else{
+                    document.write(this.name + "미혼입니다.<br>");
+                }
+            }
+        }
+
+        //객체 사용
+        //new 객체로 p1 변수를 생성함 
+        var p1 =new Person("안산", 20, false);
+        var p2 =new Person("추신수", 40, true);
+        
+
+        document.write("이름 : " + p1.name + '<br>');
+        document.write("나이 : " + p1.age + '<br>');
+        p1.info();
+
+        document.write("이름 : " + p2.name + '<br>');
+        document.write("나이 : " + p2.age + '<br>');
+        p2.info();
+    </script>
+</body>
+</html>

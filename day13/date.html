@@ -13,18 +13,18 @@
 
         document.write("<br>==== 날짜 ====<br>");
         document.write("현재 시각은 " + today + '<br>');
-        document.write("현재 시각은 " + today.tolocalestring() + '<br>');
+        document.write("현재 시각은 " + today.toLocaleString() + '<br>');
         document.write("현재 연도 : " + today.getFullYear() + '년<br>');
         document.write("현재 연도 : " + (today.getMonth() + 1) + '월<br>');
         document.write("현재 연도 : " + today.getDate() + '일<br>');
 
         document.write("<br>==== 날짜 ====<br>");
-        document.write("현재 시각은 " + today.tolocalestring() + '<br>');
+        document.write("현재 시각은 " + today.toLocaleTimeString() + '<br>');
         document.write("현재 시 : " + today.getHours() + '시<br>');
         document.write("현재 분 : " + (today.getMinutes() + 1) + '분<br>');
         document.write("현재 초 : " + today.getSeconds() + '초<br>');
 
-        document.write("<br>===== 현재까지의 시간 ====<br>");
+        document.write("<br>===== 현재까지의 시간 =====<br>");
     </script>
 </body>
 </html>
