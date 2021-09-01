@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addEnventListener() 사용</title>
+</head>
+<body>
+    <div id="container">
+        <img src="./images/easys-1.jpg" id='img'>
+    </div>
+
+    <script>
+        var pic = document.querySelector("#img");
+
+        //함수 이름 없이 바로 실행 - 실행 함수
+        pic.addEventListener('mouseover', function(){
+            pic.src = "./images/easys-2.jpg";
+        });
+
+        pic.addEventListener('mouseout',function(){
+            pic.src = "./images/easys-1.jpg";
+        })
+
+        /*pic.addEventListener('mouseover', changePic);   //마우스 올렸을때 이미지 변경
+        pic.addEventListener('mouseout', changePic2);   //마우스가 벗어났을때 이미지 바뀜
+
+        function changePic(){
+            pic.src = "./images/easys-2.jpg";
+        }
+        function changePic2(){
+            pic.src = "./images/easys-1.jpg";
+        }*/
+    </script>
+</body>
+</html>
